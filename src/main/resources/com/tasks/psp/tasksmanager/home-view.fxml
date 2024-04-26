@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TableView layoutX="359.0" layoutY="103.0" prefHeight="468.0" prefWidth="353.0">
@@ -22,7 +21,7 @@
           <TableColumn prefWidth="176.800048828125" text="Job" />
         </columns>
       </TableView>
-      <BorderPane layoutX="58.0" layoutY="175.0" prefHeight="200.0" prefWidth="254.0">
+      <BorderPane layoutX="62.0" layoutY="191.0" prefHeight="200.0" prefWidth="254.0">
          <top>
             <Label text="Search" BorderPane.alignment="CENTER">
                <font>
@@ -48,23 +47,18 @@
             </CheckBox>
          </left>
       </BorderPane>
-      <Button layoutX="41.0" layoutY="415.0" mnemonicParsing="false" text="Manage Tasks">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <Button layoutX="199.0" layoutY="415.0" mnemonicParsing="false" text="Go To Salary">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
       <MenuBar prefHeight="26.0" prefWidth="780.0">
         <menus>
-          <Menu mnemonicParsing="false" text="New Task">
+          <Menu mnemonicParsing="false" text="Task">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Cleaning">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Employees">
             <items>
               <MenuItem mnemonicParsing="false" text="Delete" />
@@ -72,5 +66,20 @@
           </Menu>
         </menus>
       </MenuBar>
+      <Button layoutX="108.0" layoutY="483.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Go To Salary">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="420.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Modify Employee">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="189.0" layoutY="420.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Delete Employee">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

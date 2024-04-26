@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="654.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="21.0" layoutY="53.0" prefHeight="256.0" prefWidth="354.0">
+         <columns>
+            <TableColumn prefWidth="176.7999496459961" text="Employee" />
+            <TableColumn prefWidth="176.800048828125" text="Job" />
+         </columns>
+      </TableView>
+      <TableView layoutX="414.0" layoutY="53.0" prefHeight="256.0" prefWidth="354.0">
+         <columns>
+            <TableColumn prefWidth="176.7999496459961" text="Task" />
+            <TableColumn prefWidth="176.800048828125" text="Category" />
+         </columns>
+      </TableView>
+      <TableView layoutX="414.0" layoutY="355.0" prefHeight="256.0" prefWidth="354.0">
+         <columns>
+            <TableColumn prefWidth="176.7999496459961" text="Employee" />
+            <TableColumn prefWidth="176.800048828125" text="Task" />
+         </columns>
+      </TableView>
+      <MenuBar layoutX="-7.0" layoutY="1.0" prefHeight="26.0" prefWidth="792.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Task">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Cleaning">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Employees">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="21.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Assign Task">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Confirm Changes" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="38.0" layoutY="355.0" prefHeight="200.0" prefWidth="320.0">
+         <top>
+            <Label text="Search" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <TextField />
+               </graphic>
+            </Label>
+         </top>
+         <center>
+            <CheckBox mnemonicParsing="false" text="Employees" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+         </center>
+         <left>
+            <CheckBox mnemonicParsing="false" text="Tasks" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+         </left>
+         <right>
+            <CheckBox mnemonicParsing="false" text="Taskless" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
