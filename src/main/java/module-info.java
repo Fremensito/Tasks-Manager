@@ -6,7 +6,7 @@ module com.tasks.psp.tasksmanager {
     requires org.kordamp.bootstrapfx.core;
 
     opens com.tasks.psp.tasksmanager to javafx.fxml;
-    opens com.tasks.psp.tasksmanager.models to com.google.gson;
+    opens com.tasks.psp.tasksmanager.models to com.google.gson, javafx.base;
     exports com.tasks.psp.tasksmanager;
     exports com.tasks.psp.tasksmanager.controllers;
     opens com.tasks.psp.tasksmanager.controllers to javafx.fxml;

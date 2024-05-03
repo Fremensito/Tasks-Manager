@@ -19,8 +19,6 @@ public class TaskFormController extends NavBar {
     public TextArea description;
     public Button create;
     public DatePicker date;
-
-    private final String URL = "http://localhost:8080/trabajos";
     public Label result;
 
     public void initialize(){
@@ -38,8 +36,9 @@ public class TaskFormController extends NavBar {
         result.setText("Creating...");
         String json = gson.toJson(jbTask, JobTask.class);
 
-        CompletableFuture.supplyAsync(() -> ServiceUtils.getResponse(URL, json, "POST"))
+        ServiceUtils.getResponseAsync("/trabajos", json, "POST")
         .thenAccept((response) -> Platform.runLater(()-> {
+            System.out.println(response);
             BaseResponse bs = gson.fromJson(response, BaseResponse.class);
             if(bs != null)
                 result.setText("Task Created");

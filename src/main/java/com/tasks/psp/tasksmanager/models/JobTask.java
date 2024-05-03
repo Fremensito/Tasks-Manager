@@ -23,4 +23,12 @@ public class JobTask {
         this.descripcion = descripcion;
         this.fecIni = fecIni;
     }
+
+    public String getCodTrabajo(){
+        return this.codTrabajo;
+    }
+
+    public String getCategoria(){
+        return this.categoria;
+    }
 }
