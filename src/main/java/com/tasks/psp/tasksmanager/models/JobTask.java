@@ -31,4 +31,6 @@ public class JobTask {
     public String getCategoria(){
         return this.categoria;
     }
+
+    public String getDescripcion(){return this.descripcion;}
 }
