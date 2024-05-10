@@ -9,4 +9,7 @@ public class Employee {
     public String contrasenya;
     public String email;
     public String trabajos;
+
+    public String getDni(){return this.dni;}
+    public String getEspecialidad(){return this.especialidad;}
 }

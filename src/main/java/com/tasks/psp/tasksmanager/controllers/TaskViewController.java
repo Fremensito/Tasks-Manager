@@ -57,10 +57,10 @@ public class TaskViewController extends NavBar{
                 .thenAccept((response)->{
                     BaseResponse bs = gson.fromJson(response, BaseResponse.class);
                     Platform.runLater(()->{
-                        employeeJobTasks = FXCollections.observableList(bs.trabajos);
-                        employeeTasksTable.setItems(employeeJobTasks);
-                        employeTasksTask.setCellValueFactory(new PropertyValueFactory<>("codTrabajo"));
-                        employeeTasksDescription.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
+                        employees = FXCollections.observableList(bs.empleados);
+                        employeeTable.setItems(employeeJobTasks);
+                        selectEmployeeColumn.setCellValueFactory(new PropertyValueFactory<>("dni"));
+                        selectJobColumn.setCellValueFactory(new PropertyValueFactory<>("especialidad"));
                     });
                 });
     }
